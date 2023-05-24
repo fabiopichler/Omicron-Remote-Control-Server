@@ -1,0 +1,178 @@
+* {
+    font-family: "Noto Sans";
+    font-size: 14px;
+    color: #d2d2d2;
+    outline: none;
+}
+
+/* QWidget
+--------------------------------------------------------- */
+QWidget {
+    background: #363636;
+}
+
+/* QMenuBar
+--------------------------------------------------------- */
+QMenuBar {
+    margin: 0;
+    spacing: 0;
+    padding: 1px 8px;
+    background: #2a2a2a;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #232323;
+}
+QMenuBar::item {
+    spacing: 0;
+    padding: 2px 8px;
+    background: transparent;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    margin: 0;
+}
+QMenuBar::item:selected {
+    background: rgba(200,200,200,0.2);
+    border-top: 1px solid #232323;
+    border-right: 1px solid #232323;
+    border-left: 1px solid #232323;
+    color: #fff;
+}
+QMenuBar::item:pressed {
+    background: rgba(200,200,200,0.4);
+    color: #fff;
+}
+
+/* QMenu
+--------------------------------------------------------- */
+QMenu {
+    background: #464646;
+    border: 1px solid #232323;
+    padding: 1px;
+}
+QMenu::item {
+    background: transparent;
+    margin: 0;
+    padding: 4px 10px 4px 20px;
+    color: #d2d2d2;
+}
+QMenu::item:disabled {
+    background: #3f3f3f;
+    color: #888;
+}
+QMenu::item:selected {
+    color: #fff;
+    background: #232323;
+}
+QMenu::separator {
+    height: 1px;
+    background: #666;
+    margin: 1px 4px;
+}
+
+/* QGroupBox
+--------------------------------------------------------- */
+QGroupBox {
+    border: 1px solid #666;
+    margin-top: 9px;
+    padding-top: 3px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 3px;
+}
+
+/* QLabel
+--------------------------------------------------------- */
+QLabel {
+    background: transparent;
+}
+
+/* QPushButton
+--------------------------------------------------------- */
+QPushButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #494949, stop: 1 #2c2c2c);
+    border: 1px solid #232323;
+    padding: 0 7px;
+    height: 20px;
+    min-width: 50px;
+}
+QPushButton:disabled {
+    background: #d5d5d5;
+    color: #555555;
+}
+QPushButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2c2c2c, stop: 1 #494949);
+}
+QPushButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #1f1f1f, stop: 1 #393939);
+    padding: 2px 0 0 2px;
+}
+QPushButton::menu-indicator {
+    image: none;
+    width: 0;
+}
+
+/* QCheckBox
+--------------------------------------------------------- */
+QCheckBox {
+    spacing: 5px;
+}
+QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #232323;
+}
+QCheckBox::indicator:unchecked {
+    background: #323232;
+}
+QCheckBox::indicator:unchecked:pressed,
+QCheckBox::indicator:checked:pressed {
+    background: #2a2a2a;
+    border: 1px solid #1e1e1e;
+}
+QCheckBox::indicator:checked {
+    background: #345;
+    border: 1px solid #123;
+    image: url(":/images/Check.png");
+}
+QCheckBox::indicator:unchecked:hover,
+QCheckBox::indicator:checked:hover {
+    background: #456;
+}
+
+/* QSpinBox
+--------------------------------------------------------- */
+QSpinBox {
+    padding-right: 15px;
+    background: #464646;
+    border: 1px solid #232323;
+}
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+
+    image: url(":/images/Arrowhead-Up-2.png");
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #494949, stop: 1 #2c2c2c);
+    border: 1px solid #232323;
+    width: 16px;
+    height: 10px;
+}
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+
+    image: url(":/images/Arrowhead-Down-2.png");
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #494949, stop: 1 #2c2c2c);
+    border: 1px solid #232323;
+    width: 16px;
+    height: 10px;
+}
+QSpinBox::up-button:hover,
+QSpinBox::down-button:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2c2c2c, stop: 1 #494949);
+}
+QSpinBox::up-button:pressed,
+QSpinBox::down-button:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #1f1f1f, stop: 1 #393939);
+}

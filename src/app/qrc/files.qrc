@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>app-logo.png</file>
+        <file>style.css</file>
+        <file>fonts/NotoSans/NotoSans-Bold.ttf</file>
+        <file>fonts/NotoSans/NotoSans-Regular.ttf</file>
+        <file>images/Arrowhead-Down-2.png</file>
+        <file>images/Arrowhead-Up-2.png</file>
+        <file>images/Check.png</file>
+    </qresource>
+</RCC>
